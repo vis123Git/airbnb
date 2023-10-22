@@ -4,42 +4,37 @@
   font-family: inter;
 }
 
-/* ALL NAVBAR STYLE STARTS */
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+
+/* ALL NAVBAR STYLE STARTS */
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  background-color: #fff; 
-  padding: 10px 20px; 
+  background-color: #000;
+  padding: 10px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .logo img {
-  height: 40px; 
+  height: 40px;
 }
 
-.middle-search {
-  flex: 1; 
+.middle-nav-search {
+  color: white;
   display: flex;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.middle-search input {
-  border: none;
-  padding: 10px;
-  width: 100%;
-}
-
-.middle-search button {
-  background-color: #ff5a5f; 
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 25px;
-
+.middle-nav-search > a {
+  color: white;
+  text-decoration: none;
+  margin-inline: 10px;
 }
 
 .profile-section {
@@ -48,10 +43,108 @@ nav {
   gap: 10px;
 }
 
+.middle-search {
+  width: 50%;
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.middle-search input {
+  border: none;
+  padding: 0px 10px;
+  width: 100%;
+  border-radius: 25px 0px 0px 25px;
+  color: #fff;
+  border-right: 1px solid #757575;
+  margin-inline: 2px;
+}
+
+.middle-search button {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.hero-image {
+  width: 95%;
+  height: 70%;
+  margin: auto;
+  border-radius: 10px;
+  background-image: url(assets/AirbnbHeroBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .profile-section a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
+
+/* Base styles for the section */
+.all-tourist-places {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading styles */
+.all-tourist-places-heading-container h1 {
+  font-size: 24px;
+}
+
+/* Card container styles */
+.all-tourist-places-cards-container {
+  display: flex;
+}
+
+.card-one{
+  background-color: #CC2D4A;
+}
+/* Card styles */
+.card {
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .card {
+    width: calc(100% - 20px); /* One card per row on screens smaller than 600px */
+  }
+}
+
+/* Image styles */
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+/* Title styles */
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Distance styles */
+.card p {
+  font-size: 14px;
+  margin: 0;
+}
+
 
 /* Media query for responsive design */
 @media screen and (max-width: 768px) {

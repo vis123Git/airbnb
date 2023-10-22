@@ -9,25 +9,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <img src="assets/airbnb_logo.png" alt="Airbnb Logo" />
-      </div>
+    <section style="background-color: black; height: 100vh; width: 100vw">
+      <nav>
+        <div class="logo">
+          <img src="assets/airbnb_logo.png" alt="Airbnb Logo" />
+        </div>
+        <div class="middle-nav-search">
+          <a href="#placeToStay">Places To Stay</a>
+          <a href="#experience">Experiences</a>
+          <a href="#onliineExperience">Online Experiences</a>
+        </div>
+
+        <div class="profile-section">
+          <a href="#">Become a Host</a>
+          <i class="fa-solid fa-globe"></i>
+          <div class="profile">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+      </nav>
+
       <div class="middle-search">
-        <input type="text" placeholder="Bordeaux" />
-        <input type="text" placeholder="Feb 19 - Feb 26" />
-        <input type="text" placeholder="2 guests" />
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="text" id="destination" placeholder="Where are you going?" />
+        <input type="text" id="checkIn" placeholder="Add dates" />
+        <input type="text" id="checkOut" placeholder="Add dates" />
+        <input type="text" id="guests" placeholder="Add guests" />
+        <button id="search-hotels"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
-      <div class="profile-section">
-        <a href="#">Become a Host</a>
-        <i class="fa-solid fa-globe"></i>
-        <div class="profile">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-regular fa-user"></i>
+
+      <div class="hero-image"></div>
+    </section>
+
+    <section class="all-tourist-places">
+      <div class="all-tourist-places-heading-container">
+        <h1>Inspiration for your next trip</h1>
+      </div>
+
+      <div class="all-tourist-places-cards-container">
+        <div class="card card-one">
+          <img src="assets/Nashville.png" alt="" />
+          <h2>Nashville</h2>
+          <p>53 miles away</p>
+        </div>
+        <div class="card card-two">
+          <img src="assets/southHeaven.png" alt="" />
+          <h2>South Haven</h2>
+          <p>168 miles away</p>
+        </div>
+        <div class="card card-three">
+          <img src="assets/stanton.png" alt="" />
+          <h2>Stanton</h2>
+          <p>192 miles away</p>
+        </div>
+        <div class="card card-four">
+          <img src="assets/newBuffalo.png" alt="" />
+          <h2>New Buffalo</h2>
+          <p>130 miles away</p>
         </div>
       </div>
-    </nav>
+    </section>
 
     <footer>
       <div class="main-footer">
