@@ -88,28 +88,23 @@ nav {
   color: #fff;
 }
 
-/* Base styles for the section */
 .all-tourist-places {
-  background-color: #f5f5f5;
   padding: 20px;
-  text-align: center;
 }
 
-/* Heading styles */
 .all-tourist-places-heading-container h1 {
-  font-size: 24px;
+  font-size: 16px;
+  padding-left: 10px;
 }
 
-/* Card container styles */
 .all-tourist-places-cards-container {
   display: flex;
 }
 
-.card-one{
-  background-color: #CC2D4A;
-}
+
 /* Card styles */
 .card {
+  text-align: left;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -117,11 +112,38 @@ nav {
   border-radius: 5px;
 }
 
+.card-one{
+  background-color: #CC2D4A;
+}
 
-/* Media query for smaller screens */
+.card-two{
+  background-color: #BC1A6E;
+}
+
+.card-three{
+  background-color: #DE5151;
+}
+
+.card-four{
+  background-color: #D93B30;
+}
+
+.subtitles{
+  padding-left: 20px;
+
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+}
+
+
 @media (max-width: 600px) {
   .card {
-    width: calc(100% - 20px); /* One card per row on screens smaller than 600px */
+    width: calc(100% - 20px); 
   }
 }
 
