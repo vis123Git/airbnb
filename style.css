@@ -108,14 +108,19 @@ nav {
 
 .second-sec-images{
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.second-sec-images>img{
-  margin: 5px;
-  flex: 1;
+.second-sec-images img {
+  max-width: 100%; 
+  height: auto;
+  max-height: 100vh; 
+  margin: 0 10px;
+
 }
+
+
 
 /* Card styles */
 .card {
@@ -169,6 +174,33 @@ nav {
   margin: 0;
 }
 
+
+.giftcard-section{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 95vw;
+  border: 2px solid green;
+}
+
+.giftcard-headings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.giftcard-headings h1{
+  font-size: 16px;
+}
+
+.giftcard-headings button{
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  background: #000;
+  padding: 5px 10px;
+}
+
 @media (max-width: 600px) {
   .all-tourist-places {
     margin: 5px;
@@ -182,9 +214,20 @@ nav {
     display: flex;
     flex-direction: column;
   }
+
+  .second-section h1 {
+    font-size: 20px;
+  }
+  
+  .second-sec-images {
+    flex-direction: column;
+  }
+  
+  .second-sec-images img {
+    margin: 10px 0;
+  }
 }
 
-/* Media query for responsive design */
 @media screen and (max-width: 768px) {
   .middle-search {
     display: none;
