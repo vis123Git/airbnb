@@ -212,18 +212,17 @@ nav {
   }
 
   .bg-girl-img{
-    /* width: 90vw;
-    background-image: url(assets/girl_bg_image.png); */
-
     width: 95vw;
-    height: 70vh;
-    border: 2px solid green;
+    height: 100vh;
     margin: auto;
     border-radius: 10px;
     background-image: url(assets/girl_bg_image.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 
   }
 
